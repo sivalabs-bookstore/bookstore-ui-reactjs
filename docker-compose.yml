@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  bookstore-ui-reactjs:
+    container_name: bookstore-ui-reactjs
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      CATALOG_API_BASE_URL: http://localhost:8081
+      ORDER_API_BASE_URL: http://localhost:8085
