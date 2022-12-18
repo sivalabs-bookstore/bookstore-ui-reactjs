@@ -9,4 +9,4 @@ services:
       - "8080:80"
     environment:
       CATALOG_API_BASE_URL: http://localhost:8081
-      ORDER_API_BASE_URL: http://localhost:8085
+      ORDER_API_BASE_URL: http://localhost:8083
